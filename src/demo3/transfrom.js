@@ -16,7 +16,9 @@ export default function transformer(file, api) {
       .find(j.JSXAttribute)
       .forEach((path) => {
           const attr = path.node.name
-          const attrVal = ((path.node.value || {}).expression || {}).value ? path.node.value.expression : path.node.value
+          const attrVal = ((path.node.value || {}).expression || {}).value ? 
+              path.node.value.expression : 
+              path.node.value
 
           if (attr.name === "type") {
               if (attrVal.value === 'normal') {
@@ -43,7 +45,6 @@ export default function transformer(file, api) {
               } else {
                   path.node.value = j.stringLiteral('link')
               }
-
           }
       });
 

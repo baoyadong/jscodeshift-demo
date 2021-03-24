@@ -1,7 +1,7 @@
 {
   "name": "jscodeshift-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://github.com/baoyadong/jscodeshift-demo",
   "main": "index.js",
   "bin": {
     "ast": "bin/index.js"

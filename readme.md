@@ -3,9 +3,9 @@
 
 
 ## Usage
-1. 下载git文件
-2. npm link 
-3. 使用命令行：ast src/demo1， ast src/demo2等等
+1. 下载git文件, yarn install 安装依赖包
+2. npm link
+3. 使用命令行：ast src/demo1， ast src/demo2...
 
 ## 常用命令
 ### 查找：find, filter, 返回数组
