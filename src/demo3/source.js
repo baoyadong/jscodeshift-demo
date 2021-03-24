@@ -1,5 +1,5 @@
 /*
-替换为：
+转译后：
   var React = require('React');
 
   var Counter = createReactClass({
@@ -7,7 +7,7 @@
       return <h1>Hello, {this.props.name}</h1>;
     }
   });
-*/ 
+*/
 
 var React = require('React');
 
