@@ -1,13 +1,13 @@
 const path = require('path')
 const fs = require('fs')
 const execa = require('execa');
-const jscodeshiftBin = require.resolve('.bin/jscodeshift');
+const jscodeshiftBin = require.resolve('.bin/jscodeshift'); // 获取文件的路径
 
 module.exports.main = async () => {
   const astFilesDir = path.resolve(process.argv[2]) // 获取文件的绝对路径，这个还挺骚气的
   const [source, transferPath] = fs.readdirSync(astFilesDir) // 获取目录下的文件
   const outdrr = await execa.sync(
-    jscodeshiftBin, 
+    jscodeshiftBin,
     ['-t', path.join(astFilesDir, transferPath), path.join(astFilesDir, source)]
   )
  

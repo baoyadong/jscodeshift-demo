@@ -28,7 +28,7 @@ export default function transformer(file, api) {
 
           if (attr.name === "size") {
               if (attrVal.value === 'medium') {
-                  attrVal.value = 'middle'
+                attrVal.value = 'middle'
               }
           }
 
