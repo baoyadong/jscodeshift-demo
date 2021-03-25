@@ -17,3 +17,7 @@
   + insertAfter: 插在当前节点前面；
   + remove: 删除节点；
 ### 遍历：forEach, map, size, at
+
+
+## 参考系列
+[js-codemod](https://github.com/cpojer/js-codemod)
